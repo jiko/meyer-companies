@@ -1,3 +1,5 @@
+---
+---
 /*****************************************************************************/
 /*
 /* Common
@@ -11,42 +13,44 @@
 }
 
 html, body { height: 100%; }
+header, nav, article, footer {
+	display: block;}
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+	color: #524b49;
+	background-color: #a21418;
+	font-family: 'Helserif-Boo', Georgia, Times, Serif;
+	margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-shadow: -1px 1px 3px #c1c1c1;}
+h1 { font-size: 1.3em;}
+h2 { font-size: 1.17em;}
+h3 { font-size: 1em; line-height: 1em;}
+p { 
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: .75rem;}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+a         { color: #991122; }
+a:hover   { color: #524B49; }
+a:visited { color: #818181; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+img { padding: 1% 2% 1% 0; }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
+hr {
+	border: 0;
+	color: #C2C2C2;
+	background-color: #C2C2C2;
+	height: 2px;}
 
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+table {
+  font-size: inherit;
+  font: 100%;
 }
 
 /*****************************************************************************/
@@ -55,106 +59,105 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
+.container {
+	max-width: 780px;
+	margin: 0px auto;
+	background color: #ffffff;}
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
-}
-
-.meta {
+header {
+  background-color: #fff;
+	padding: 2%;
+	border-top: 3px solid #000000;}
+header h1 {
+	color: #ffffff;}
+#headerinfo {
+	float: right;
+	text-align: right;
+	color: #000;
+	padding-top: 7%;}
+#headerinfo a { 
+	color: #000;}
+#headerinfo a:hover { 
+	color: #c1c1c1;}
+	
+.site .meta {
   color: #aaa;
 }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
+footer {
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	padding: 1.5% 3%;
+	background-color: #000;
+	overflow: auto;
+	width: 100%;}
+	
+footer address {
+	display: inline;}
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
+footer a { color: #c1c1c1; }
+footer a:visited { color: #818181; }
 
-.footer .contact a {
-  color: #8085C1;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
-}
+article {
+	border: 2px solid #c2c2c2;
+	background-color: #ffffff;
+	overflow: visible;
+	padding: 3% 3%;
+	font-family: 'Helserif-Boo', Georgia, Times, Serif;}
 
 /*****************************************************************************/
 /*
-/* Posts
+/* Overrides
 /*
-/*****************************************************************************/
+/******************************************************************************/
 
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.pull-right {
+  float: right !important;
+} 
+
+.pull-left {
+  float: left !important;
+} 
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 5% 0 7.5% 0;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+nav.top-bar {
+	padding: 0px 2%;
+	background-color: #000;
 }
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+ul.right {
+	color: #524B49;
+	background-color: #000;
 }
 
-.post pre code {
-  border: none;
+.top-bar-section ul li > a {
+	font-family: 'Montserrat', Arial, sans-serif !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .8em;
+	background: #000;
 }
 
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+.top-bar-section li a:not(.button) {
+	background: #000;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+.top-bar.expanded .title-area {
+	background: #000 !important;
 }
+
+.top-bar expanded {
+	background: #000 !important;
+}
+
+.top-bar {
+	background: #000;
+}
+
