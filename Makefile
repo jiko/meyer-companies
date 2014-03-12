@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: all clean serve
 
 all: css/min.css js/min.js
 
@@ -10,3 +10,6 @@ js/min.js: js/jquery.js js/foundation.min.js
 
 clean:
 	rm -rf _site js/min.js css/min.css
+
+serve:
+	jekyll serve -w
