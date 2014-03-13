@@ -14,10 +14,6 @@ body {
   background-color: $yellow;
 }
 
-a {
-  @include hover-link();
-}
-
 header {
   background-color: $gray;
   padding: 1em;
@@ -42,6 +38,7 @@ header li {
 
 header a {
   @include link-colors($yellow);
+  @include hover-link();
 }
 
 article {
