@@ -1,0 +1,63 @@
+@import "compass/reset";
+// @import "partials/base";
+// @import "partials/header";
+@import "compass/typography/lists/inline-block-list";
+@import "compass/typography/links";
+@import "fittext";
+
+$pad: 0.5em;
+$yellow: #f0cc01; // #b89b41;
+$gray: #1a1818;
+$black: #080506;
+
+body {
+  background-color: $yellow;
+}
+
+a {
+  @include hover-link();
+}
+
+header {
+  background-color: $gray;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  padding: $pad;
+  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 2em, $max-font-size: 10em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
+}
+
+header ul {
+  @include inline-block-list();
+  padding-bottom: 1em + $pad;
+}
+
+header li {
+  padding: $pad;
+  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 1em, $max-font-size: 2em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
+}
+
+header a {
+  @include link-colors($yellow);
+}
+
+article {
+  line-height: 1.5em;
+  background-color: #fff;
+}
+
+footer {
+  padding: 1em;
+  color: $black;
+}
+
+footer a {
+  @include link-colors($gray);
+}
+
+footer ul {
+  display: inline-block;
+}
