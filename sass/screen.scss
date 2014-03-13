@@ -4,6 +4,7 @@
 @import "compass/typography/lists/inline-block-list";
 @import "compass/typography/links";
 @import "fittext";
+// @import "susy";
 
 $pad: 0.5em;
 $yellow: #f0cc01; // #b89b41;
@@ -16,7 +17,7 @@ body {
 
 header {
   background-color: $gray;
-  padding: 1em;
+  padding: 2*$pad;
   text-align: center;
 }
 
@@ -44,11 +45,19 @@ header a {
 article {
   line-height: 1.5em;
   background-color: #fff;
+  font-size: 1.5em;
+  padding: $pad;
+}
+
+article p {
+  max-width: 35em;
+  margin: 0 auto;
 }
 
 footer {
-  padding: 1em;
+  padding: 2 * $pad;
   color: $black;
+//  @include container(100%);
 }
 
 footer a {
@@ -57,4 +66,11 @@ footer a {
 
 footer ul {
   display: inline-block;
+//  @include span(25%);
+   width: 20%;
+   padding: $pad * 2;
+}
+
+footer li {
+  font-size: 1.25em;
 }

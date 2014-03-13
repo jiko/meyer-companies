@@ -63,67 +63,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 body {
   background-color: #f0cc01;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 header {
   background-color: #1a1818;
   padding: 1em;
   text-align: center;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 header h1 {
   font-size: 2em;
   padding: 0.5em;
 }
 @media screen and (min-width: 200px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 2em;
   }
 }
 @media screen and (min-width: 400px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 3em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 4em;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 5em;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 6em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 7em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   header h1 {
     font-size: 8em;
   }
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 header ul {
   margin: 0;
   padding: 0;
@@ -146,24 +146,24 @@ header ul li {
   white-space: nowrap;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 header li {
   padding: 0.5em;
 }
 @media screen and (min-width: 200px) {
-  /* line 34, ../sass/screen.scss */
+  /* line 35, ../sass/screen.scss */
   header li {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 400px) {
-  /* line 34, ../sass/screen.scss */
+  /* line 35, ../sass/screen.scss */
   header li {
     font-size: 2em;
   }
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 header a {
   color: #f0cc01;
   text-decoration: none;
@@ -173,24 +173,39 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 article {
   line-height: 1.5em;
   background-color: #fff;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
+article p {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+/* line 57, ../sass/screen.scss */
 footer {
   padding: 1em;
   color: #080506;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 footer a {
   color: #1a1818;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 footer ul {
   display: inline-block;
+  width: 20%;
+  padding: 1em;
+}
+
+/* line 74, ../sass/screen.scss */
+footer li {
+  font-size: 1.25em;
 }
