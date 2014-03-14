@@ -1,7 +1,7 @@
-.PHONY: clean serve stop status
+.PHONY: clean start stop status
 
 clean:
-	rm -rf _site js/min.js css/min.css
+	rm -rf _site .sass-cache
 
 start:
 	jekyll serve -w > /dev/null 2>&1 &
