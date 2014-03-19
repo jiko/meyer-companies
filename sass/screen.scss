@@ -4,21 +4,32 @@
 @import "compass/typography/lists/inline-block-list";
 @import "compass/typography/links";
 @import "fittext";
-// @import "susy";
+@import "susy";
 
 $pad: 0.5em;
-$yellow: #f0cc01; // #b89b41;
+
+$yellow: #f0cc01; // #eec342; // #b89b41;
 $gray: #1a1818;
+$light-gray: #fdfdfd;
 $black: #080506;
+$light-blue: #008cba;
+$dark-blue: #3c6888;
+$fleming-blue: #005595;
+$red: #a21418;
 
 body {
-  background-color: $yellow;
+  background-color: $black;
+}
+
+a {
+  @include link-colors($gray, $black, $yellow, $gray, $light-blue);
 }
 
 header {
-  background-color: $gray;
+  background-color: $yellow;
   padding: 2*$pad;
   text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 
 header h1 {
@@ -38,13 +49,14 @@ header li {
 }
 
 header a {
-  @include link-colors($yellow);
+  @include link-colors($gray);
   @include hover-link();
 }
 
 article {
   line-height: 1.5em;
-  background-color: #fff;
+  background-color: $light-gray;
+  color: $gray;
   font-size: 1.5em;
   padding: $pad;
 }
@@ -56,21 +68,26 @@ article p {
 
 footer {
   padding: 2 * $pad;
-  color: $black;
-//  @include container(100%);
+  color: $dark-blue;
+//  @include container;
 }
 
 footer a {
-  @include link-colors($gray);
+  @include link-colors($fleming-blue, $dark-blue, $fleming-blue, $fleming-blue);
+  @include hover-link();
 }
 
 footer ul {
   display: inline-block;
-//  @include span(25%);
-   width: 20%;
-   padding: $pad * 2;
+  //@include span(25%);
+  width: 20%;
+  padding: $pad * 2;
 }
 
 footer li {
   font-size: 1.25em;
+  line-height: 1.25em;
 }
+
+footer ul:first-child li { display: inline-block; }
+footer ul:first-child li:first-child { padding-right: 1em; }
