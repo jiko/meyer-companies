@@ -1,2 +1,7 @@
-name: Meyer Companies
+name: The Meyer Companies
 markdown: redcarpet
+exclude: ['Makefile','Gemfile']
+redcarpet:
+  extensions:
+    - smart
+    - autolink
