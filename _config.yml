@@ -1,5 +1,6 @@
 name: The Meyer Companies
 markdown: redcarpet
+baseurl: /meyer-companies
 exclude: ['Makefile','Gemfile']
 redcarpet:
   extensions:
