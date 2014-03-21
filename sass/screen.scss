@@ -72,7 +72,7 @@ footer {
   padding: 2 * $pad;
   padding-left: $pad;
   color: $dark-blue;
-  max-width: 55em;
+  max-width: 56em;
   margin: 0 auto;
 }
 
@@ -105,7 +105,8 @@ footer ul:last-child li:first-child {
 
 footer ul:last-child li:nth-child(2) { padding-right: 4*$pad; }
 
-footer ul:nth-child(2) li {
+footer ul:first-child li {
   font-size: 1.5em;
   padding-bottom: 0.2em;
+  font-family: $sans;
 }
