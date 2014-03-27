@@ -11,13 +11,12 @@ $sans: 'Gill Sans', Helvetica, sans-serif;
 $gray: #1a1818;
 $light-gray: #fdfdfd;
 $black: #040404;
-$light-blue: #008cba;
-$dark-blue: #3c6888;
-$fleming-blue: #005595;
+$light-blue: #8CBED6;
+$dark-blue: #008cba;
 
 body { background-color: $black; }
 
-a { @include link-colors($gray, $black, $fleming-blue, $gray, $light-blue); }
+a { @include link-colors($gray, $black, $dark-blue, $gray, $light-blue); }
 
 header {
   background-color: $light-blue;
@@ -83,13 +82,13 @@ article {
 footer {
   padding: 2 * $pad;
   padding-left: $pad;
-  color: $dark-blue;
+  color: $light-blue;
   max-width: 60em;
   margin: 0 auto;
 }
 
 footer a {
-  @include link-colors($fleming-blue, $dark-blue, $fleming-blue, $fleming-blue);
+  @include link-colors($dark-blue, $dark-blue, $light-blue, $dark-blue);
   @include hover-link();
 }
 

@@ -19,11 +19,11 @@ body { background-color: #040404; }
 
 a { color: #1a1818; }
 a:visited { color: #1a1818; }
-a:focus { color: #008cba; }
+a:focus { color: #8cbed6; }
 a:hover { color: #040404; }
-a:active { color: #005595; }
+a:active { color: #008cba; }
 
-header { background-color: #008cba; padding: 0 1em; text-align: center; font-family: "Gill Sans", Helvetica, sans-serif; }
+header { background-color: #8cbed6; padding: 0 1em; text-align: center; font-family: "Gill Sans", Helvetica, sans-serif; }
 
 header section { background-color: #fdfdfd; max-width: 60em; margin: 0 auto; -webkit-box-shadow: 0 -5px 5px #1a1818; -moz-box-shadow: 0 -5px 5px #1a1818; box-shadow: 0 -5px 5px #1a1818; }
 
@@ -50,12 +50,12 @@ article h1 { max-width: 24em; font-size: 1.5em; padding-top: 0.5em; padding-bott
 article ul { list-style: disc; padding-left: 2em; }
 article img { display: block; width: 100%; }
 
-footer { padding: 1em; padding-left: 0.5em; color: #3c6888; max-width: 60em; margin: 0 auto; }
+footer { padding: 1em; padding-left: 0.5em; color: #8cbed6; max-width: 60em; margin: 0 auto; }
 
-footer a { color: #005595; text-decoration: none; }
-footer a:visited { color: #005595; }
-footer a:hover { color: #3c6888; }
-footer a:active { color: #005595; }
+footer a { color: #008cba; text-decoration: none; }
+footer a:visited { color: #008cba; }
+footer a:hover { color: #008cba; }
+footer a:active { color: #8cbed6; }
 footer a:hover { text-decoration: underline; }
 
 footer ul { display: inline-block; padding: 1em; padding-right: 1.5em; }
