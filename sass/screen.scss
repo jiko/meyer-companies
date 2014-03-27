@@ -30,6 +30,7 @@ header section {
   background-color: $light-gray;
   max-width: 60em;
   margin: 0 auto;
+  @include single-box-shadow($gray, 0, -5px, 5px, false, false);
 }
 
 header h1 {
