@@ -1,6 +1,7 @@
 @import "compass/reset";
 @import "compass/typography/lists/inline-block-list";
 @import "compass/typography/links";
+@import "compass/css3/box-shadow";
 @import "fittext";
 
 $pad: 0.5em;
@@ -29,6 +30,7 @@ header section {
   background-color: $light-gray;
   max-width: 56em;
   margin: 0 auto;
+  @include single-box-shadow($gray, 0, -5px, 10px, false, false);
 }
 
 header h1 {
