@@ -5,32 +5,36 @@
 
 $pad: 0.5em;
 
-$sans: Helvetica, sans-serif;
+$sans: 'Gill Sans', Helvetica, sans-serif;
 
-$yellow: #f0cc01; // #eec342; // #b89b41;
 $gray: #1a1818;
 $light-gray: #fdfdfd;
 $black: #040404;
 $light-blue: #008cba;
 $dark-blue: #3c6888;
 $fleming-blue: #005595;
-$red: #a21418;
 
 body { background-color: $black; }
 
-a { @include link-colors($gray, $black, $yellow, $gray, $light-blue); }
+a { @include link-colors($gray, $black, $fleming-blue, $gray, $light-blue); }
 
 header {
-  background-color: $yellow;
-  padding: 2*$pad;
+  background-color: $light-blue;
+  padding: 0 2*$pad;
   text-align: center;
   font-family: $sans;
+}
+
+header section {
+  background-color: $light-gray;
+  max-width: 56em;
+  margin: 0 auto;
 }
 
 header h1 {
   font-size: 2em;
   padding: $pad;
-  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 2em, $max-font-size: 7em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
+  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 2em, $max-font-size: 6em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
 }
 
 header ul {
@@ -50,8 +54,8 @@ header a {
 
 article {
   line-height: 1.5em;
-  background-color: $light-gray;
   color: $gray;
+  background-color: $light-gray;
   font-size: 1.5em;
   padding: $pad;
   p, h1, ol, ul, a, img, table {
