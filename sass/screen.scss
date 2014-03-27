@@ -30,7 +30,7 @@ header {
 header h1 {
   font-size: 2em;
   padding: $pad;
-  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 2em, $max-font-size: 10em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
+  @include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 2em, $max-font-size: 7em, $media-increment: 200, $font-increment: 1, $ratio: 1, $round: false);
 }
 
 header ul {
