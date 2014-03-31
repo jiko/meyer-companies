@@ -20,6 +20,7 @@ a { @include link-colors($gray, $black, $dark-blue, $gray, $light-blue); }
 
 header {
   background-color: $light-gray;
+  background-image: url("/meyer-companies/img/white_wall_hash.png");
   padding: 0 2*$pad;
   text-align: center;
   font-family: $sans;
