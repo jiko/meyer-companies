@@ -1,6 +1,8 @@
 The Meyer Companies
 ========
 
+Background texture courtesy of [Subtle Patterns](http://subtlepatterns.com)
+
 [GitHub Pages][ghp] hosts this site. You will need [Git][git] or a [GitHub client][client] installed to work on this site on your local machine. GitHub uses the [Jekyll static-site generator][jekyll] to turn these files into a static website.
 
 To use Jekyll on your local machine, you will need Ruby and RubyGems installed. Then run `gem install bundler` followed by `bundle install` to install all of the gems used to develop this site. I have used [Compass][compass] to ease CSS authoring, and the Compass extension [FitText][ft].
