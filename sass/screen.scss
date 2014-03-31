@@ -20,7 +20,6 @@ a { @include link-colors($gray, $black, $dark-blue, $gray, $light-blue); }
 
 header {
   background-color: $light-gray;
-  background-image: url("/meyer-companies/img/white_wall_hash.png");
   padding: 0 2*$pad;
   text-align: center;
   font-family: $sans;
@@ -55,6 +54,7 @@ article {
   font-size: 1.25em;
   @media screen and (min-width: 600px) { & { font-size: 1.5em; } }
   background-color: $light-gray;
+  background-image: url("/meyer-companies/img/white_wall_hash.png");
   padding: $pad;
   p, h1, ol, ul, a, img, table {
     max-width: 30em;
