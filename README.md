@@ -5,7 +5,7 @@ Background texture courtesy of [Subtle Patterns](http://subtlepatterns.com)
 
 [GitHub Pages][ghp] hosts this site. You will need [Git][git] or a [GitHub client][client] installed to work on this site on your local machine. GitHub uses the [Jekyll static-site generator][jekyll] to turn these files into a static website.
 
-To use Jekyll on your local machine, you will need Ruby and RubyGems installed. Then run `gem install github-pages` to install the Jekyll static-site generator.
+To use Jekyll on your local machine, you will need [Ruby and RubyGems installed][ruby]. Then run `gem install github-pages` to install the Jekyll static-site generator.
 
 You will also need the [Node.js][node] modules uglify-js and cssmin. Once you have Node.js installed, run `npm install` to get these packages.
 
@@ -15,4 +15,5 @@ To use the Makefile, you need GNU make, which most Linux distributions provide, 
 [git]: http://git-scm.com/downloads "Check the GUI Clients page"
 [client]: http://windows.github.com/ "GitHub for Windows"
 [jekyll]: http://jekyllrb.com/
+[ruby]: https://www.ruby-lang.org/en/installation/
 [node]: http://nodejs.org/
