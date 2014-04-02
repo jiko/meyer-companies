@@ -18,8 +18,8 @@ header, nav, article, footer {
 
 body {
   color: #222;
-  background-color: #a21418;
-  background-image: url("/Images/concrete_wall.png");
+  background-color: #040404;
+  background-image: url("{{ site.baseurl }}/img/old_wall.png");
   font-family: Georgia, Times, Serif;
   margin: 0px;
 }
@@ -69,33 +69,29 @@ header {
   font-family: Helvetica, Arial, sans-serif;
   padding: 2%;
   text-align: center;
-  border-top: 3px solid #a21418;}
+  border-top: 3px solid #1a1818;}
 
 header h1 {
-  font-size: 1.4em;
+  font-size: 2em;
   vertical-align: middle;
   text-shadow: none;
-  color: #fff; }
+  color: #1a1818; }
 
 .logo { padding-right: 0; padding-left: 0; }
 
 .title { padding-right: 0; padding-left: 0; }
 
-#headerinfo { padding-bottom: 0.5em; line-height: 1.5em; }
+#headerinfo { padding-bottom: 0.5em; line-height: 1.5em; height: 100%; }
 
-#headerinfo a {  color: #fff; }
-
-#headerinfo a:hover { color: #c1c1c1; }
-
-.site .meta { color: #aaa; }
+#headerinfo a { display: block; color: #1a1818; padding: 0.25em 0; }
 
 footer {
   color: #fff;
   font-family: Helvetica, arial, sans-serif;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 1.5% 3%;
-  background-color: #a21418;
+  background-color: #1a1818;
   overflow: auto;
   width: 100%;}
 
@@ -105,6 +101,12 @@ footer address {
 footer a { color: #fff; }
 footer a:hover { color: #c1c1c1; }
 footer a:visited { color: #fff; }
+
+footer h1 { text-shadow: none; color: #fff; padding-bottom: 1em; }
+
+footer div:last-child p a { display: inline-block; padding-bottom: 1em; }
+
+footer div:last-child p a:first-child { padding-right: 1em; }
 
 article {
   border: 2px solid #c2c2c2;
@@ -128,12 +130,12 @@ article {
 
 nav.top-bar {
   padding: 0px 2%;
-  background-color: #a21418;
+  background-color: #1a1818;
 }
 
 ul.right {
   color: #524B49;
-  background-color: #a21418;
+  background-color: #1a1818;
 }
 
 .top-bar ul li > a {
@@ -148,23 +150,23 @@ ul.right {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .8em;
-  background: #a21418;
+  background: #1a1818;
 }
 
 .top-bar-section li a:not(.button) {
-  background: #a21418;
+  background: #1a1818;
 }
 
 .top-bar.expanded .title-area {
-  background: #a21418 !important;
+  background: #1a1818 !important;
 }
 
 .top-bar expanded {
-  background: #a21418 !important;
+  background: #1a1818 !important;
 }
 
 .top-bar {
-  background: #a21418;
+  background: #1a1818;
 }
 
 .top-bar .toggle-topbar a { 
