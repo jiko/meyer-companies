@@ -1,0 +1,176 @@
+---
+---
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+header, nav, article, footer {
+  display: block;}
+
+body {
+  color: #222;
+  background-color: #a21418;
+  background-image: url("/Images/concrete_wall.png");
+  font-family: Georgia, Times, Serif;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: -1px 1px 3px #c1c1c1;}
+h1 { font-size: 1.3em;}
+h2 { font-size: 1.17em;}
+h3 { font-size: 1em; line-height: 1em;}
+p { 
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: .75rem;}
+
+a         { color: #991122; }
+a:hover   { color: #524B49; }
+a:visited { color: #991122; }
+
+img { padding: 1% 2% 1% 0; }
+
+hr {
+  border: 0;
+  color: #C2C2C2;
+  background-color: #C2C2C2;
+  height: 2px;}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.container {
+  max-width: 640px;
+  margin: 0px auto;
+  background color: #ffffff;}
+
+header {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 2%;
+  text-align: center;
+  border-top: 3px solid #a21418;}
+
+header h1 {
+  font-size: 1.4em;
+  vertical-align: middle;
+  text-shadow: none;
+  color: #fff; }
+
+.logo { padding-right: 0; padding-left: 0; }
+
+.title { padding-right: 0; padding-left: 0; }
+
+#headerinfo { padding-bottom: 0.5em; line-height: 1.5em; }
+
+#headerinfo a {  color: #fff; }
+
+#headerinfo a:hover { color: #c1c1c1; }
+
+.site .meta { color: #aaa; }
+
+footer {
+  color: #fff;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 1.5% 3%;
+  background-color: #a21418;
+  overflow: auto;
+  width: 100%;}
+
+footer address {
+  display: inline;}
+
+footer a { color: #fff; }
+footer a:hover { color: #c1c1c1; }
+footer a:visited { color: #fff; }
+
+article {
+  border: 2px solid #c2c2c2;
+  background-color: #ffffff;
+  overflow: visible;
+  padding: 3% 3%;
+  font-family: Georgia, Times, Serif;}
+
+/*****************************************************************************/
+/*
+/* Overrides
+/*
+/******************************************************************************/
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 5% 0 7.5% 0;
+}
+
+nav.top-bar {
+  padding: 0px 2%;
+  background-color: #a21418;
+}
+
+ul.right {
+  color: #524B49;
+  background-color: #a21418;
+}
+
+.top-bar ul li > a {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.top-bar-section ul li > a {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+  background: #a21418;
+}
+
+.top-bar-section li a:not(.button) {
+  background: #a21418;
+}
+
+.top-bar.expanded .title-area {
+  background: #a21418 !important;
+}
+
+.top-bar expanded {
+  background: #a21418 !important;
+}
+
+.top-bar {
+  background: #a21418;
+}
+
+.top-bar .toggle-topbar a { 
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.top-bar.expanded .toggle-topbar a { color: #fff; }
