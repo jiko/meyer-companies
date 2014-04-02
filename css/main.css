@@ -83,7 +83,7 @@ header h1 {
 
 #headerinfo { padding-bottom: 0.5em; line-height: 1.5em; height: 100%; }
 
-#headerinfo a { display: block; color: #1a1818; padding: 0.25em 0; }
+#headerinfo a { display: block; color: #1a1818; padding: 0.25em 0 0.5em 0; }
 
 article {
   border: 2px solid #c2c2c2;
