@@ -1,7 +1,6 @@
 name: The Meyer Companies
 markdown: redcarpet
-baseurl: /meyer-companies
-exclude: ['Makefile','Gemfile']
+exclude: ['Makefile','package.json']
 redcarpet:
   extensions:
     - smart
