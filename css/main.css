@@ -64,12 +64,13 @@ table {
   background color: #ffffff;}
 
 header {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   padding: 2%;
   text-align: center;
   border-top: 3px solid #1a1818;}
 
 header h1 {
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 2em;
   vertical-align: middle;
   text-shadow: none;
@@ -158,13 +159,17 @@ ul.right {
 
 footer {
   color: #fff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-weight: 400;
   font-size: 0.9em;
   padding: 2% 3%;
   background-color: #1a1818;
   overflow: auto;
   width: 100%;}
+
+footer h1 {
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 footer address {
   display: inline;}
